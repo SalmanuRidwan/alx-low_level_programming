@@ -1,16 +1,19 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_line - check the code for Holberton School students.
+ * print_line - Draws a straight line using the character _.
  *
- * @n: number of times to print _.
+ * @n: The number of _ characters to be printed.
  */
+
 void print_line(int n)
 {
-	while (n > 0)
+	int line;
+
+	if (n > 0)
 	{
-		_putchar('_');
-		n--;
+		for (line = 0; line < n; line++)
+			_putchar('_');
 	}
 	_putchar('\n');
 }

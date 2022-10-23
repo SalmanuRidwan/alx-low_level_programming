@@ -1,17 +1,16 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_numbers - check the code for Holberton School students.
- *
- * Return: zero.
+ * print_numbers - prints numbers from 0 to 9, followed by a new line.
+ * Return: void.
  */
 void print_numbers(void)
 {
-	int a;
+	int i;
 
-	for (a = 0; a <= 9; a++)
+	for (i = 48; i < 58; i++)
 	{
-		_putchar('0' + a);
+		_putchar(i);
 	}
 	_putchar('\n');
 }
